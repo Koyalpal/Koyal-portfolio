@@ -1,0 +1,290 @@
+/* General Style */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: #7600bc;
+  padding: 2cm 1cm;
+  margin: 0;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topdiv {
+  padding-right: 1cm;
+}
+
+.profile_name {
+  color: white;
+  padding-left: 2cm;
+}
+
+.profile_name .contact_info {
+  font-size: 16px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact_info img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* Top Menu */
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* About Me Section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+#about-me h1 {
+  font-size: 48px;
+  margin-top: 20px;
+  color: #7600bc;
+}
+
+#about-me p {
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  line-height: 1.6;
+}
+
+.profile_image {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #7600bc;
+  margin-top: 60px;
+}
+
+/* Skills Section */
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skill {
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.skill img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill h6 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Projects Section */
+.projects-container {
+  padding: 20px 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  margin: 40px 0;
+}
+
+.project-card {
+  margin: 20px 0;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.project-card li {
+  font-size: 18px;
+  margin-left: 30px;
+  line-height: 1.6;
+}
+
+/* Recommendations Section */
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 300px;
+  min-height: 120px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Recommendation Form */
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+fieldset {
+  border: thin solid lightgray;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Buttons */
+button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7600bc;
+  color: white;
+  font-weight: bold;
+}
+
+/* Popup */
+.popup {
+  width: 400px;
+  background-color: #e8bcf0;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.popup img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.popup h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Scroll to Top Button */
+.iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topdiv {
+    padding: 0;
+    text-align: center;
+  }
+
+  .topmenu {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .profile_image {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  fieldset {
+    width: 90%;
+  }
+}
